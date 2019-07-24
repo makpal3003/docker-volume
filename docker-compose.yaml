@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+
+  makpal:
+    image: makpal3003/apache6:latest
+    volumes:
+      - ./my-container-files:/var/www/html:rw
+    ports:
+      - "9090:80"
